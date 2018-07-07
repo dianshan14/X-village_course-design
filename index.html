@@ -1,4 +1,5 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<!DOCTYPE html>
+<html lang="zh-TW">
 <head>
 	<title>X-Village Requests</title>
 </head>
@@ -13,11 +14,55 @@
 		<br>
 		<br>
 		<a href="https://github.com/x-village/python-course">X-Village Python Course</a>
-        <br>
-		<br>
       </h6>
     </div>
-    <div style="text-align:center;" class="deco form-group">
+    <div style="text-align:center; displa: flex;">
+		<input type="button" value="放大燈" onclick="bigger();">
+		<input type="button" value="縮小燈" onclick="smaller();">
+	</div>
+    <div style="text-align:center; display: flex; ">
+		<div id="bigger" onclick="bigger();"></div>
+		<div id="changed" style="font-size: 14px;">看我被改變</div>
+		<div id="smaller" onclick="smaller();"></div>
     </div>
   </div>
+  
+  <style>
+	#page-title {
+		margin-top: 80px;
+		margin-bottom: 0px;
+	}
+
+	#page-introduction {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	#bigger, #smaller, #changed {
+		height: 300px;
+	}
+
+	#bigger {
+		flex: 0 0 40%;
+	}
+	#changed {
+		flex: 1 0 20%;
+	}
+	#smaller {
+		flex: 0 0 40%;
+	}
+  </style>
+
+  <script>
+	function bigger(){
+		console.log("放大");
+		var size = +document.getElementById("changed").style.fontSize.replace("px", "");
+		document.getElementById("changed").style.fontSize = (size+12) + "px";
+	}
+	function smaller(){
+		console.log("縮小");
+		var size = +document.getElementById("changed").style.fontSize.replace("px", "");
+		document.getElementById("changed").style.fontSize = (size-12) + "px";
+	}
+  </script>
 </body></html>
