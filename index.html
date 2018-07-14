@@ -5,26 +5,38 @@
 </head>
 
 <body>
-  <div class="chart">
+  <div>
     <div style="text-align:center; font-size: 70px;">
       <h1 id="page-title" class="header1">Requests 模組練習頁面</h1>
       <h6 id="page-introduction">
-		Lesson07 Python Requests module demo
+		Lesson07 Python Requests 模組 demo
 		<br>
 		<br>
-		<a href="https://hackmd.io/c/ByMeYR1mm/https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSeIYlGHLJoQQyrMkXZ2TIz1tbDMlbdo9b1TeEMumu5V3h4mlg%2Fviewform">X-Village Python Course</a>
+		<a href="https://hackmd.io/c/ByMeYR1mm/https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSeIYlGHLJoQQyrMkXZ2TIz1tbDMlbdo9b1TeEMumu5V3h4mlg%2Fviewform">X-Village Python 課程</a>
       </h6>
     </div>
-    <div style="text-align:center;">
+    <div class="text-center">
 		<input type="button" value="放大燈" onclick="bigger();">
 		<input type="button" value="縮小燈" onclick="smaller();">
 	</div>
-    <div style="text-align:center;">
+    <div class="text-center text-blue">
 		<div id="changed" style="font-size: 14px;">看我被改變</div>
     </div>
   </div>
   
   <style>
+	.text-center {
+		text-align: center;
+	}
+
+	.text-blue {
+		color: blue;
+	}
+
+	.text-blue:hover {
+		color: red;
+	}
+
 	#page-title {
 		margin-top: 80px;
 		margin-bottom: 0px;
