@@ -15,12 +15,11 @@
 		<a href="https://hackmd.io/c/ByMeYR1mm/https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSeIYlGHLJoQQyrMkXZ2TIz1tbDMlbdo9b1TeEMumu5V3h4mlg%2Fviewform">X-Village Python 課程</a>
       </h6>
     </div>
-    <div class="text-center">
-		<input type="button" value="放大燈" onclick="bigger();">
-		<input type="button" value="縮小燈" onclick="smaller();">
+	<div>
+		<img alt="puppy" src="./src/puppu.jpg">
 	</div>
     <div class="text-center text-blue">
-		<div id="changed" style="font-size: 14px;">看我被改變</div>
+		<div id="changed" style="font-size: 14px;">我是一些文字，顯示在網頁的最下面</div>
     </div>
   </div>
   
@@ -61,17 +60,4 @@
 		flex: 0 0 40%;
 	}
   </style>
-
-  <script>
-	function bigger(){
-		console.log("放大");
-		var size = +document.getElementById("changed").style.fontSize.replace("px", "");
-		document.getElementById("changed").style.fontSize = (size+12) + "px";
-	}
-	function smaller(){
-		console.log("縮小");
-		var size = +document.getElementById("changed").style.fontSize.replace("px", "");
-		document.getElementById("changed").style.fontSize = (size-12) + "px";
-	}
-  </script>
 </body></html>
